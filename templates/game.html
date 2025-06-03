@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PONG - Juego</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <div class="score">
+                <span id="player1Score">0</span> - <span id="player2Score">0</span>
+            </div>
+            <div class="game-info">
+                <span id="gameMode"></span>
+                <span id="ballHits">Pases: 0</span>
+            </div>
+            <button id="pauseBtn">Pausar</button>
+        </div>
+        <canvas id="gameCanvas" width="800" height="400"></canvas>
+        <div class="controls">
+            <p><strong>Controles:</strong></p>
+            <p>Jugador 1: W (arriba) / S (abajo)</p>
+            <p id="player2Controls">Jugador 2: ↑ (arriba) / ↓ (abajo)</p>
+        </div>
+        <button id="backToMenu" class="back-btn">Volver al Menú</button>
+    </div>
+    <script src="../js/game.js"></script>
+</body>
+</html>
